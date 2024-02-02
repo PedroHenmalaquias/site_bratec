@@ -1,57 +1,71 @@
 @import url('https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400;500;600;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-*{
+
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-:root{
+
+:root {
     --fontePadrao: 'AR One Sans', sans-serif;
 }
- body{
+
+body {
     /* background-color: #000000; */
     color: white;
     z-index: 1;
 }
-header{
+
+header {
     width: 100%;
     display: flex;
     background-color: #000000;
     /*margin-bottom: 20px;*/
-    /* position: sticky; */
+    position: sticky;
     top: 0;
-    z-index: 8;
+    z-index: 18;
 }
-.logo{
+
+.logo {
     margin-top: 5px;
     width: 30%;
 }
-.logo > img{
+
+.logo > a > img {
     width: 100%;
     height: 125px;
 }
-nav{
+
+nav {
     width: 70%;
     margin-top: 50px;
     height: 60px;
     display: flex;
     justify-content: space-around;
 }
-.itensNav{
-height: 60px;
-color: white;
-width: 23%;
-text-align: center;
-font-family:'AR One Sans', sans-serif;
-}
-.itensNav :hover{
-    cursor: pointer;
 
+.itensNav {
+    height: 60px;
+    color: white;
+    width: 23%;
+    text-align: center;
+    font-family: 'AR One Sans', sans-serif;
 }
-.itensNav > h2{
-    padding-top: 20px;
+
+.itensNav :hover {
+    cursor: pointer;
+}
+
+.itensNav > a {
+    text-decoration: none;
+    color: white;
+}
+.itensNav > a > h2{
     font-size: 20px;
+    padding-top: 18px;
 }
-section.module.parallax{
+
+section.module.parallax {
     display: flex;
     justify-content: space-between;
     height: 120vh !important;
@@ -66,61 +80,76 @@ section.module.parallax{
     -moz-background-size: cover;
     -o-background-size: cover;
 }
-section.module.parallax::after{
-content: "";
-height: 100%;
-width: 100%;
-position: absolute;
-z-index: 8;
-background: linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100%);
+
+section.module.parallax::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 8;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 40%, #000 100%);
 }
-section.module.parallax-1{
-    background-image:url(images/imagemFundoIntro4.jpg) ;
+
+section.module.parallax-1 {
+    background-image: url(images/imagemFundoIntro4.jpg);
 }
-#secaoEconomia{
+
+#secaoEconomia {
     background-image: url(images/imagemFundoEconomia.jpg);
 }
-#secaoVantagens{
+
+#secaoVantagens {
     background-image: url(images/imagemFundoVatagens.jpeg);
 }
-#secaoRenovavel{
+
+#secaoRenovavel {
     background-image: url(images/imagemFundoRenovavel.jpg);
 }
-.tituloParceiros{
+
+.tituloParceiros {
     width: 100%;
     background-color: #000;
     color: white;
     height: 100px;
     text-align: center;
 }
-.tituloParceiros h1{
+
+.tituloParceiros h1 {
     /*margin-top: 30px;*/
     font-size: 70px;
     font-weight: bold;
     font-family: var(--fontePadrao);
 }
-.slider{
-    margin: /*50px*/ auto;
+
+.slider {
+    margin:
+        /*50px*/
+        auto;
     width: 100%;
     height: 760px;
     overflow: hidden;
 }
-.slides{
+
+.slides {
     width: 400%;
     height: 760px;
     display: flex;
 }
-.slides input{
+
+.slides input {
     display: none;
 }
-.slide{
+
+.slide {
     width: 25%;
     position: relative;
     transition: 2s;
 }
-.slide img{
+
+.slide img {
     width: 100%;
 }
+
 /* Dropdown Button */
 .dropbtn {
     background-color: #000;
@@ -129,107 +158,129 @@ section.module.parallax-1{
     font-size: 20px;
     border: none;
     font-weight: bold;
-  }
-  
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown {
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
     position: relative;
     display: inline-block;
     margin-top: 10px;
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
     display: none;
     position: absolute;
     background-color: #f1f1f1;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 10;
-  }
-  .hidden{
+}
+
+.hidden {
     opacity: 0;
     filter: blur(20px);
     transform: translateX(-100%);
     transition: all 1s;
-  }
-  .show{
+}
+
+.show {
     opacity: 1;
     filter: blur(0);
     transform: translateX(0);
     transition: all 1s;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-  }
-  
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #ddd;}
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {display: block;}
-  .dropdown-content:hover .dropdown-content{display: block;}
-  
-  /* Change the background color of the dropdown button when the dropdown content is shown */
-  .dropdown:hover .dropbtn {background-color: #000;}
+}
 
-.ImagensCabecalhoLinks{
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #000;
+}
+
+.ImagensCabecalhoLinks {
     width: 40px;
     height: 40px;
     vertical-align: middle;
 }
-.manual-navigation{
+
+.manual-navigation {
     position: absolute;
     width: 100%;
     margin-top: -40px;
     display: flex;
     justify-content: center;
 }
-.manual-btn{
+
+.manual-btn {
     border: 2px solid white;
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
     transition: 1s;
 }
-.manual-btn:not(:last-child){
+
+.manual-btn:not(:last-child) {
     margin-right: 40px;
 }
-.manual-btn:hover{
+
+.manual-btn:hover {
     background-color: white;
 }
-#radio1:checked ~ .first{
+
+#radio1:checked~.first {
     margin-left: 0;
 }
-#radio2:checked ~ .first{
+
+#radio2:checked~.first {
     margin-left: -25%;
 }
-.navigation-auto div{
+
+.navigation-auto div {
     border: 2px solid white;
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
     transition: 1s;
 }
-.navigation-auto{
+
+.navigation-auto {
     position: absolute;
     width: 100%;
     margin-top: 720px;
     display: flex;
     justify-content: center;
 }
-.navigation-auto div:not(:last-child){
+
+.navigation-auto div:not(:last-child) {
     margin-right: 40px;
 }
-#radio1:checked ~ .navigation-auto .auto-btn1{
+
+#radio1:checked~.navigation-auto .auto-btn1 {
     background-color: white;
 }
-#radio2:checked ~ .navigation-auto .auto-btn2{
+
+#radio2:checked~.navigation-auto .auto-btn2 {
     background-color: white;
 }
 
@@ -240,15 +291,16 @@ section.module.parallax-1{
 
 
 
-.secaoConteudo{
+.secaoConteudo {
     margin-top: 200px;
     margin: auto;
     width: 80%;
     min-height: 100px;
-    margin-bottom: 200px ;
+    margin-bottom: 200px;
     display: flex;
 }
-.textoSecaoConteudo{
+
+.textoSecaoConteudo {
     width: 50%;
     min-height: 100px;
     font-family: var(--fontePadrao);
@@ -256,72 +308,85 @@ section.module.parallax-1{
     margin: 100px auto;
     z-index: 9;
 }
-.textoSecaoConteudo > h2{
+
+.textoSecaoConteudo>h2 {
     padding: 20px;
     font-size: 45px;
     font-weight: bold;
 }
-.textoSecaoConteudo > p{
+
+.textoSecaoConteudo>p {
     padding: 8px;
     font-size: 20px;
 }
-.imagemSecaoConteudo{
+
+.imagemSecaoConteudo {
     width: 50%;
     min-height: 100px;
     display: flex;
-    align-items: center ;
+    align-items: center;
 }
-.imagemSecaoConteudo > img{
-width: 100%;
-height: 370px;
-margin-bottom: 5px;
+
+.imagemSecaoConteudo>img {
+    width: 100%;
+    height: 370px;
+    margin-bottom: 5px;
 }
-.tituloSobreCarrossel{
+
+.tituloSobreCarrossel {
     font-family: var(--fontePadrao);
     text-align: center;
     margin-top: 70px;
     margin-bottom: 10px;
 }
-footer{
+
+footer {
     width: 100%;
     min-height: 120px;
     display: flex;
     background-color: black;
     font-family: var(--fontePadrao);
 }
-.logoFooter{
+
+.logoFooter {
     width: 40%;
     height: 130px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
-.logoFooter > img{
+
+.logoFooter>img {
     height: 110px;
     width: 400px;
 }
-.linksFooter{
+
+.linksFooter {
     width: 30%;
     height: 100px;
     margin: auto;
 }
-.subtituloLinks{
+
+.subtituloLinks {
     width: 100%;
     text-align: center;
     color: white;
     margin-bottom: 10px;
 }
-.imagenslinksFooter{
+
+.imagenslinksFooter {
     display: flex;
     width: 40%;
-    justify-content:space-around;
+    justify-content: space-around;
     margin: auto;
 }
-.imagenslinksFooter > a > img{
+
+.imagenslinksFooter>a>img {
     height: 50px;
     width: 50px;
 }
-.secaoIntroducao{
+
+.secaoIntroducao {
     width: 100%;
     height: 700px;
     background-image: url(images/imagemFundoIntro4.jpg);
@@ -331,7 +396,8 @@ footer{
     justify-content: space-between;
     margin-top: 0;
 }
-.parteTitulo{
+
+.parteTitulo {
     width: 30%;
     height: 100%;
     font-family: var(--fontePadrao);
@@ -341,44 +407,51 @@ footer{
     margin-left: 200px;
     z-index: 9;
 }
-.textoCarrossel{
-  position: absolute;
-  transform: translate(-50%, -50%);
-  z-index: 1;
-  color: white;
-  font-weight: bold;
-  width: 200px;
-  margin-left: 10%;
-  margin-top: 10%;
-  padding: 10px;
-  font-family: var(--fontePadrao);
+
+.textoCarrossel {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: white;
+    font-weight: bold;
+    width: 200px;
+    margin-left: 10%;
+    margin-top: 10%;
+    padding: 10px;
+    font-family: var(--fontePadrao);
 }
-.textoCarrossel h1{
+
+.textoCarrossel h1 {
     font-size: 55px;
     color: white;
     text-decoration: none;
 }
-.textoCarrossel p{
+
+.textoCarrossel p {
     font-size: 25px;
     color: white;
     text-decoration: none;
 }
-.parteTitulo > h1{
+
+.parteTitulo>h1 {
     font-size: 35px;
     padding: 10px;
 }
-.parteTitulo > h2{
+
+.parteTitulo>h2 {
     font-size: 25px;
 }
-.linksSecaoIntroducao{
+
+.linksSecaoIntroducao {
     width: 20%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 200px; 
+    margin-top: 200px;
     z-index: 9;
 }
-.linksSecaoIntroducao > a{
+
+.linksSecaoIntroducao>a {
     color: #F2CC0C;
     text-decoration: none;
     padding: 5px;
@@ -386,9 +459,10 @@ footer{
     font-size: 20px;
     cursor: pointer;
 }
-.secaoFormulario{
-    width: 30%;
-    height: 500px;
+
+.secaoFormulario {
+    width: 50%;
+    height: 650px;
     /* display: flex; */
     flex-direction: column;
     justify-content: space-around;
@@ -398,50 +472,164 @@ footer{
     margin: auto;
     padding: 10px;
     font-family: var(--fontePadrao);
+    border: none;
+    overflow: auto;
 }
-.tituloFormulario{
+
+.tituloFormulario {
     width: 100%;
     text-align: center;
     font-weight: bold;
     font-size: 20px;
 }
-.inputsFormulario{
+
+.inputsFormulario {
     width: 70%;
     display: flex;
     flex-direction: column;
     margin: auto;
-    font-size: 18px;
-    padding: 10px;
+    font-size: 25px;
+    padding: 1rem;
 }
-dialog::backdrop{
-    background-color: rgba(0,0,0,.6);
+.inputsFormulario input{
+    margin: 1rem 0;
+    font-size: 20px;
+    border: none;
+    border-radius: .25rem;
+    height: 35px;
+}
+.input-mensagem{
+    height: 100px;
+    vertical-align: text-top;
+    text-wrap: wrap;
+    padding: 1rem;
+    font-size: 20px;
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, .6);
     filter: blur(20px);
 }
-.botoesInputs{
+
+.botoesInputs {
     width: 100%;
     display: flex;
     justify-content: space-around;
+    margin-top: 1rem;
+    padding: 1rem;
 }
-.botoesInputs input{
+
+.botoesInputs input {
     font-size: 20px;
+    border: none;
+    border-radius: .25rem;
+    cursor: pointer;
+    width: 30%;
+    height: 2rem;
 }
-#Link-orçamento{
+#botao-envia{
+    color: white;
+    background-color: #03A64A;
+}
+#botao-cancelar{
+    color: black;
+    background-color: red;
+}
+
+#Link-orçamento {
     background-color: #000;
     border: none;
+}
+/* SEÇÃO SONHOS REALIZADOS*/
+.secao-sonhos{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+.sonhos{
+width: 40%;
+flex-direction: column;
+display: flex;
+margin-bottom: 1rem;
+padding-bottom: 1rem;
+margin-top: 3rem;
+padding-top: 1rem;
+border: 1px solid black;
+border-radius: .25rem;
+background-color: white;
+color: black;
+font-family: var(--fontePadrao);
+}
+.sonhos > img{
+    width: 60%;
+    margin: 1rem auto;
+    border-radius: .25rem
+}
+.sonhos > h2{
+    text-align: center;
+    font-size: 1.75rem;
+    margin: 10px 0;
+}
+.sonhos > span{
+    width: 90%;
+    margin: auto;
+    border: 1px solid black;
+    border-radius: .25rem;
+}
+.sonhos > p{
+    padding: 2rem;
+    font-size: 20px;
+}
+.sonhos > button{
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    width: 20%;
+    border-radius: .25rem;
+    margin-left: 70%;
+    height: 40px;
+    opacity: .8;
+}
+.sonhos > button:hover{
+    transition: .5s;
+    opacity: 1;
+}
+.fundo-popUp{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;    
+}
+.popUp{
+    width: 85%;
+    margin: auto;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    height: 500px;
+    background-color: white;
 }
 html {
     scroll-behavior: smooth;
     transition: scroll-duration 1s;
-  }
-  
-  @keyframes scroll {
+}
+
+@keyframes scroll {
     0% {
-      transform: translateY(0);
+        transform: translateY(0);
     }
+
     100% {
-      transform: translateY(-100%);
+        transform: translateY(-100%);
     }
-  }
+}
+
 @media only screen and (max-width: 320px) {
     header {
         flex-direction: column;
