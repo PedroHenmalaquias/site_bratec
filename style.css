@@ -60,7 +60,7 @@ nav {
     color: white;
     width: 23%;
     text-align: center;
-    font-family: 'AR One Sans', sans-serif;
+    font-family: var(--fontePadrao);
 }
 
 .itensNav :hover {
@@ -86,7 +86,7 @@ section.module.parallax {
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    backgro und-size: cover;
+    background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -133,9 +133,7 @@ section.module.parallax-1 {
 }
 
 .slider {
-    margin:
-        /*50px*/
-        auto;
+    margin:/*50px*/ auto;
     width: 100%;
     height: 760px;
     overflow: hidden;
@@ -626,177 +624,109 @@ font-family: var(--fontePadrao);
     height: 500px;
     background-color: white;
 }
-html {
-    scroll-behavior: smooth;
-    transition: scroll-duration 1s;
-}
-
-@keyframes scroll {
-    0% {
-        transform: translateY(0);
+@media screen  and (max-width: 1025px){
+    .logo > a > img{
+        height: 80px;
+    }
+    .telLogo > img{
+        width: 30px;
+    }
+    nav{
+        margin-top: 20px;
+        height: 35px;
+    }
+    .itensNav{
+        height: 35px;
+    }
+    .itensNav > a > h2{
+        font-size: 15px;
+        padding-top: 12px;
+    }
+    .itensNav > button{
+        font-size: 15px;
+    }
+    .dropbtn{
+        font-size: 15px;
     }
 
-    100% {
-        transform: translateY(-100%);
+    section.module.parallax{
+        height: 90vh !important;
     }
-}
-
-@media only screen and (max-width: 320px) {
-    header {
-        flex-direction: column;
+    .parteTitulo{
+        margin-top: 70px;
+        margin-left: 150px;
     }
-
-    .logo {
+    .parteTitulo>h1{
+        font-size: 28px;
+        padding: 8px;
+    }
+    .parteTitulo>h2{
+        font-size: 22px;
+    }
+    .linksSecaoIntroducao{
+        margin-top: 150px;
+    }
+    .linksSecaoIntroducao>a{
+        font-size: 17px;
+        padding: 3px;
+    }
+    .tituloParceiros {
+        height: 70px;
+    }
+    .tituloParceiros h1{
+        font-size: 50px;
+    }
+    .slider{
+        height: 550px;
+    }
+    .slides{
+        height: 550px;
+    }
+    .navigation-auto{
+        margin-top: 510px;
+    }
+    .textoCarrossel h1{
+        font-size: 40px;
+    }
+    .textoCarrossel p{
+        font-size: 20px;
+    }
+    .textoSecaoConteudo{
+        margin: 50px auto; 
+    }
+    .textoSecaoConteudo>h2{
+        font-size: 30px;
+    }
+    .textoSecaoConteudo>p{
+        font-size: 18px;
+        padding: 5px;
+    }
+    footer{
+        min-height: 100px;
+    }
+    .logoFooter{
+        height: 110px;
+    }
+    .logoFooter > img{
         width: 100%;
+        height: 100px;
     }
-
-    nav {
-        width: 100%;
-        flex-direction: column;
+    .subtituloLinks{
+        margin-bottom: 8px;
+        font-size: 15px;
     }
-
-    .itensNav {
-        width: 100%;
+    .imagenslinksFooter>a>img {
+        height: 40px;
+        width: 40px;
     }
-
-    .secaoCarrossel {
-        flex-direction: column;
-    }
-
-    .carrossel {
-        width: 100%;
-    }
-
-    .secaoConteudo {
-        flex-direction: column;
-    }
-
-    .textoSecaoConteudo,
-    .imagemSecaoConteudo {
-        width: 100%;
-    }
-}
-
-@media only screen and (max-width: 480px) {
-    .logo {
-        width: 50%;
-    }
-
-    nav {
-        width: 50%;
-    }
-
-    .itensNav {
-        width: 50%;
-    }
-
-    .secaoCarrossel {
-        flex-direction: column;
-    }
-
-    .carrossel {
-        width: 100%;
-    }
-
-    .secaoConteudo {
-        flex-direction: column;
-    }
-
-    .textoSecaoConteudo,
-    .imagemSecaoConteudo {
-        width: 100%;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    .logo {
-        width: 30%;
-    }
-
-    nav {
+    .sonhos > img{
         width: 70%;
     }
-
-    .itensNav {
-        width: 30%;
+    .sonhos > h2{
+        font-size: 1.60rem;
     }
-
-    .secaoCarrossel {
-        flex-direction: column;
-    }
-
-    .carrossel {
-        width: 100%;
-    }
-
-    .secaoConteudo {
-        flex-direction: column;
-    }
-
-    .textoSecaoConteudo,
-    .imagemSecaoConteudo {
-        width: 100%;
-    }
-}
-
-@media only screen and (max-width: 1024px) {
-    .logo {
-        width: 20%;
-    }
-
-    nav {
-        width: 80%;
-    }
-
-    .itensNav {
-        width: 20%;
-    }
-
-    .secaoCarrossel {
-        flex-direction: column;
-    }
-
-    .carrossel {
-        width: 100%;
-    }
-
-    .secaoConteudo {
-        flex-direction: column;
-    }
-
-    .textoSecaoConteudo,
-    .imagemSecaoConteudo {
-        width: 100%;
-    }
-}
-
-@media only screen and (max-width: 1440px) {
-    .logo {
-        width: 15%;
-    }
-
-    nav {
-        width: 85%;
-    }
-
-    .itensNav {
-        width: 15%;
-    }
-
-    .secaoCarrossel {
-        flex-direction: column;
-    }
-
-    .carrossel {
-        width: 100%;
-    }
-
-    .secaoConteudo {
-        flex-direction: column;
-    }
-
-    .textoSecaoConteudo,
-    .imagemSecaoConteudo {
-        width: 100%;
+    .sonhos > p{
+        font-size: 18px;
+        padding: 1.75rem;
     }
 }
