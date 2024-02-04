@@ -1083,20 +1083,20 @@ font-family: var(--fontePadrao);
         height: 12px;
     }
     .itensNav > a > h2{
-        font-size: 9px;
+        font-size: 12px;
         padding-top: 5px;
     }
     .itensNav > h2{
-        font-size: 9px;
+        font-size: 12px;
         margin-top: 5px;
     }
     .dropbtn{
-        font-size: 9px;
+        font-size: 12px;
         padding: 5px;
     }
 
     section.module.parallax{
-        height: 75vh !important;
+        height: 50vh !important;
     }
     .parteTitulo{
         width: 45%;
@@ -1155,14 +1155,14 @@ font-family: var(--fontePadrao);
         font-size: 10px;
     }
     .textoSecaoConteudo{
-        margin: 20px auto; 
+        margin: 10vh auto; 
         width: 90%;
     }
     .textoSecaoConteudo>h2{
-        font-size: 18px;
+        font-size: 24px;
     }
     .textoSecaoConteudo>p{
-        font-size: 12px;
+        font-size: 16px;
         padding: 1.5px;
     }
     footer{
@@ -1268,20 +1268,20 @@ font-family: var(--fontePadrao);
         height: 12px;
     }
     .itensNav > a > h2{
-        font-size: 9px;
+        font-size: 12px;
         padding-top: 5px;
     }
     .itensNav > h2{
-        font-size: 9px;
+        font-size: 12px;
         margin-top: 5px;
     }
     .dropbtn{
-        font-size: 9px;
+        font-size: 12px;
         padding: 5px;
     }
 
     section.module.parallax{
-        height: 75vh !important;
+        height: 45vh !important;
     }
     .parteTitulo{
         width: 45%;
@@ -1289,11 +1289,11 @@ font-family: var(--fontePadrao);
         margin-left: 5%;
     }
     .parteTitulo>h1{
-        font-size: 15px;
+        font-size: 18px;
         padding: 4px;
     }
     .parteTitulo>h2{
-        font-size: 12px;
+        font-size: 15px;
     }
     .linksSecaoIntroducao{
         margin-top: 50px;
@@ -1340,14 +1340,14 @@ font-family: var(--fontePadrao);
         font-size: 10px;
     }
     .textoSecaoConteudo{
-        margin: 20px auto; 
+        margin: 8vh auto; 
         width: 90%;
     }
     .textoSecaoConteudo>h2{
-        font-size: 18px;
+        font-size: 24px;
     }
     .textoSecaoConteudo>p{
-        font-size: 12px;
+        font-size: 16px;
         padding: 1.5px;
     }
     footer{
