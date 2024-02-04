@@ -353,6 +353,7 @@ footer {
     width: 100%;
     min-height: 120px;
     display: flex;
+    flex-wrap: wrap;
     background-color: black;
     font-family: var(--fontePadrao);
 }
@@ -362,7 +363,7 @@ footer {
     height: 130px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .logoFooter>img {
@@ -513,6 +514,7 @@ footer {
     text-wrap: wrap;
     padding: 1rem;
     font-size: 20px;
+    border-radius: .25rem;
 }
 
 dialog::backdrop {
@@ -624,6 +626,7 @@ font-family: var(--fontePadrao);
     height: 500px;
     background-color: white;
 }
+
 @media screen  and (max-width: 1025px){
     .logo > a > img{
         height: 80px;
@@ -642,8 +645,9 @@ font-family: var(--fontePadrao);
         font-size: 15px;
         padding-top: 12px;
     }
-    .itensNav > button{
+    .itensNav > h2{
         font-size: 15px;
+        margin-top: 10px;
     }
     .dropbtn{
         font-size: 15px;
@@ -728,5 +732,695 @@ font-family: var(--fontePadrao);
     .sonhos > p{
         font-size: 18px;
         padding: 1.75rem;
+    }
+    .secaoFormulario{
+        height: 580px;
+        padding: 7px;
+    }
+    .tituloFormulario{
+        font-size: 15px;
+    }
+    .inputsFormulario input{
+        font-size: 15px;
+        height: 25px;
+        margin: .75rem 0;
+    }
+    .input-mensagem{
+        height: 80px;
+        padding: .75rem;
+        font-size: 15px;
+    }
+    .botoesInputs input{
+        font-size: 15px;
+        height: 1.75rem;
+    }
+}
+@media screen and (max-width: 769px){
+    .logo > a > img{
+        height: 60px;
+    }
+    .telLogo > img{
+        width: 25px;
+    }
+    nav{
+        margin-top: 8px;
+        height: 35px;
+    }
+    .itensNav{
+        height: 35px;
+    }
+    .itensNav > a > h2{
+        font-size: 15px;
+        padding-top: 12px;
+    }
+    .itensNav > h2{
+        font-size: 15px;
+        margin-top: 10px;
+    }
+    .dropbtn{
+        font-size: 15px;
+    }
+
+    section.module.parallax{
+        height: 85vh !important;
+    }
+    .parteTitulo{
+        margin-top: 60px;
+        margin-left: 90px;
+    }
+    .parteTitulo>h1{
+        font-size: 24px;
+        padding: 8px;
+    }
+    .parteTitulo>h2{
+        font-size: 18px;
+    }
+    .linksSecaoIntroducao{
+        margin-top: 120px;
+    }
+    .linksSecaoIntroducao>a{
+        font-size: 15px;
+        padding: 2px;
+    }
+    .tituloParceiros {
+        height: 60px;
+    }
+    .tituloParceiros h1{
+        font-size: 45px;
+    }
+    .slider{
+        height: 420px;
+    }
+    .slides{
+        height: 420px;
+    }
+    .navigation-auto{
+        margin-top: 380px;
+    }
+    .textoCarrossel{
+        margin-left: 15%;
+        margin-top: 12%;
+    }
+    .textoCarrossel h1{
+        font-size: 32px;
+    }
+    .textoCarrossel p{
+        font-size: 16px;
+    }
+    .textoSecaoConteudo{
+        margin: 30px auto; 
+    }
+    .textoSecaoConteudo>h2{
+        font-size: 22px;
+    }
+    .textoSecaoConteudo>p{
+        font-size: 15px;
+        padding: 3.5px;
+    }
+    footer{
+        min-height: 80px;
+    }
+    .logoFooter{
+        height: 95px;
+    }
+    .logoFooter > img{
+        width: 100%;
+        height: 85px;
+    }
+    .subtituloLinks{
+        margin-bottom: 8px;
+        font-size: 12px;
+    }
+    .imagenslinksFooter>a>img {
+        height: 30px;
+        width: 30px;
+    }
+    .sonhos > img{
+        width: 80%;
+    }
+    .sonhos > h2{
+        font-size: 1.35rem;
+    }
+    .sonhos > p{
+        font-size: 15px;
+        padding: 1.15rem;
+    }
+    .secaoFormulario{
+        width: 60%;
+        height: 520px;
+        padding: 7px;
+    }
+    .tituloFormulario{
+        font-size: 12px;
+    }
+    .inputsFormulario input{
+        font-size: 12px;
+        height: 20px;
+        margin: .75rem 0;
+        padding: .75rem;
+    }
+    .input-mensagem{
+        height: 70px;
+        padding: .75rem;
+        font-size: 12px;
+    }
+    .botoesInputs input{
+        font-size: 12px;
+        height: 1.50rem;
+    }
+}
+@media screen and (max-width: 415px){
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+    .logo{
+        width: 90%;
+        flex-direction: row;
+        margin: auto;
+    }
+    .logo > a > img{
+        height: 55px;
+        width: 100%;
+    }
+    .telLogo > img{
+        width: 20px;
+    }
+    .telLogo{
+        font-size: 15px;
+        width: 50%;
+    }
+    nav{
+        margin-top: 2px;
+        height: 40px;
+        background-color: #000;
+        z-index: 18;
+        width: 100%;
+    }
+    .itensNav{
+        height: 15px;
+    }
+    .itensNav > a > h2{
+        font-size: 10px;
+        padding-top: 5px;
+    }
+    .itensNav > h2{
+        font-size: 10px;
+        margin-top: 5px;
+    }
+    .dropbtn{
+        font-size: 10px;
+        padding: 5px;
+    }
+
+    section.module.parallax{
+        height: 75vh !important;
+    }
+    .parteTitulo{
+        width: 45%;
+        margin-top: 30px;
+        margin-left: 5%;
+    }
+    .parteTitulo>h1{
+        font-size: 18px;
+        padding: 6px;
+    }
+    .parteTitulo>h2{
+        font-size: 15px;
+    }
+    .linksSecaoIntroducao{
+        margin-top: 70px;
+        margin-right: 20px;
+    }
+    .linksSecaoIntroducao>a{
+        text-align: center;
+        margin: 5px 0;
+        font-size: 12px;
+        padding: 2px;
+    }
+    .tituloParceiros {
+        height: 40px;
+    }
+    .tituloParceiros h1{
+        font-size: 30px;
+    }
+    .slider{
+        height: 220px;
+    }
+    .slides{
+        height: 220px;
+    }
+    .navigation-auto{
+        margin-top: 180px;
+    }
+    .textoCarrossel{
+        margin-left: 25%;
+        margin-top: 10%;
+    }
+    .textoCarrossel h1{
+        font-size: 24px;
+    }
+    .textoCarrossel p{
+        font-size: 12px;
+    }
+    .textoSecaoConteudo{
+        margin: 20px auto; 
+        width: 70%;
+    }
+    .textoSecaoConteudo>h2{
+        font-size: 18px;
+    }
+    .textoSecaoConteudo>p{
+        font-size: 12px;
+        padding: 1.5px;
+    }
+    footer{
+        min-height: 70px;
+    }
+    .logoFooter{
+        height: 80px;
+    }
+    .logoFooter > img{
+        width: 100%;
+        height: 70px;
+    }
+    .subtituloLinks{
+        margin-bottom: 6px;
+        margin-top: 10px;
+        font-size: 8px;
+    }
+    .imagenslinksFooter>a>img {
+        height: 30px;
+        width: 30px;
+    }
+    .sonhos{
+        width: 90%;
+        margin: 30px auto;
+    }
+    .sonhos > img{
+        width: 80%;
+    }
+    .sonhos > h2{
+        font-size: 1.35rem;
+    }
+    .sonhos > p{
+        font-size: 15px;
+        padding: 1.15rem;
+    }
+    .secaoFormulario{
+        width: 80%;
+        height: 450px;
+        padding: 5px;
+    }
+    .tituloFormulario{
+        font-size: 10px;
+    }
+    .inputsFormulario input{
+        font-size: 12px;
+        height: 18px;
+        margin: .50rem 0;
+        padding: .50rem;
+    }
+    .input-mensagem{
+        height: 70px;
+        padding: .75rem;
+        font-size: 12px;
+    }
+    .botoesInputs input{
+        font-size: 12px;
+        height: 1.50rem;
+    }
+}
+@media screen and (max-width: 321px){
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+    .logo{
+        width: 90%;
+        flex-direction: row;
+        margin: auto;
+    }
+    .logo > a > img{
+        height: 48px;
+        width: 100%;
+    }
+    .telLogo > img{
+        width: 20px;
+    }
+    .telLogo{
+        font-size: 12px;
+        width: 50%;
+    }
+    nav{
+        margin-top: 2px;
+        height: 35px;
+        background-color: #000;
+        z-index: 18;
+        width: 100%;
+    }
+    .itensNav{
+        height: 12px;
+    }
+    .itensNav > a > h2{
+        font-size: 9px;
+        padding-top: 5px;
+    }
+    .itensNav > h2{
+        font-size: 9px;
+        margin-top: 5px;
+    }
+    .dropbtn{
+        font-size: 9px;
+        padding: 5px;
+    }
+
+    section.module.parallax{
+        height: 75vh !important;
+    }
+    .parteTitulo{
+        width: 45%;
+        margin-top: 25px;
+        margin-left: 5%;
+    }
+    .parteTitulo>h1{
+        font-size: 15px;
+        padding: 4px;
+    }
+    .parteTitulo>h2{
+        font-size: 12px;
+    }
+    .linksSecaoIntroducao{
+        margin-top: 50px;
+        margin-right: 20px;
+    }
+    .linksSecaoIntroducao>a{
+        text-align: center;
+        margin: 5px 0;
+        font-size: 10px;
+        padding: 2px;
+    }
+    .tituloParceiros {
+        height: 35px;
+    }
+    .tituloParceiros h1{
+        font-size: 25px;
+    }
+    .slider{
+        height: 180px;
+    }
+    .slides > img{
+        height: 100%
+    };
+    .slides{
+        height: 180px;
+    }
+    .navigation-auto{
+        margin-top: 160px;
+    }
+    .navigation-auto div{
+        padding: 2px;
+    }
+    .navigation-auto div:not(:last-child) {
+        margin-right: 20px;
+    }
+    .textoCarrossel{
+        margin-left: 32%;
+        margin-top: 10%;
+    }
+    .textoCarrossel h1{
+        font-size: 20px;
+    }
+    .textoCarrossel p{
+        font-size: 10px;
+    }
+    .textoSecaoConteudo{
+        margin: 20px auto; 
+        width: 90%;
+    }
+    .textoSecaoConteudo>h2{
+        font-size: 18px;
+    }
+    .textoSecaoConteudo>p{
+        font-size: 12px;
+        padding: 1.5px;
+    }
+    footer{
+        min-height: 60px;
+        flex-direction: column;
+    }
+    .logoFooter{
+        width: 80%;
+        height: 70px;
+        order: 2;
+        margin: 5px auto;
+    }
+    .linksFooter{
+        width: 50%;
+        order: 1;
+        height: 50px;
+    }
+    .logoFooter > img{
+        width: 100%;
+        height: 60px;
+        margin-bottom: 5px;
+    }
+    .subtituloLinks{
+        margin-bottom: 5px;
+        margin-top: 6px;
+        font-size: 8px;
+    }
+    .imagenslinksFooter{
+        width: 80%;
+    }
+    .imagenslinksFooter>a>img {
+        height: 30px;
+        width: 30px;
+    }
+    .sonhos{
+        width: 90%;
+        margin: 30px auto;
+    }
+    .sonhos > img{
+        width: 90%;
+        margin: .5rem auto;
+    }
+    .sonhos > h2{
+        font-size: 1.15rem;
+    }
+    .sonhos > p{
+        font-size: 15px;
+        padding: .95rem;
+    }
+    .secaoFormulario{
+        width: 85%;
+        height: 400px;
+        padding: 2px;
+    }
+    .tituloFormulario{
+        font-size: 10px;
+    }
+    .inputsFormulario input{
+        font-size: 12px;
+        height: 16px;
+        margin: .40rem 0;
+        padding: .40rem;
+    }
+    .input-mensagem{
+        height: 60px;
+        padding: .75rem;
+        font-size: 12px;
+    }
+    .botoesInputs input{
+        font-size: 1    2px;
+        height: 1.35rem;
+    }
+}
+@media screen and (max-width: 281px){
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+    .logo{
+        width: 100%;
+        flex-direction: row;
+        margin: auto;
+    }
+    .logo > a > img{
+        height: 48px;
+        width: 100%;
+    }
+    .telLogo > img{
+        width: 20px;
+    }
+    .telLogo{
+        font-size: 12px;
+        width: 50%;
+    }
+    nav{
+        margin-top: 2px;
+        height: 35px;
+        background-color: #000;
+        z-index: 18;
+        width: 100%;
+    }
+    .itensNav{
+        height: 12px;
+    }
+    .itensNav > a > h2{
+        font-size: 9px;
+        padding-top: 5px;
+    }
+    .itensNav > h2{
+        font-size: 9px;
+        margin-top: 5px;
+    }
+    .dropbtn{
+        font-size: 9px;
+        padding: 5px;
+    }
+
+    section.module.parallax{
+        height: 75vh !important;
+    }
+    .parteTitulo{
+        width: 45%;
+        margin-top: 25px;
+        margin-left: 5%;
+    }
+    .parteTitulo>h1{
+        font-size: 15px;
+        padding: 4px;
+    }
+    .parteTitulo>h2{
+        font-size: 12px;
+    }
+    .linksSecaoIntroducao{
+        margin-top: 50px;
+        margin-right: 20px;
+    }
+    .linksSecaoIntroducao>a{
+        text-align: center;
+        margin: 5px 0;
+        font-size: 10px;
+        padding: 2px;
+    }
+    .tituloParceiros {
+        height: 35px;
+    }
+    .tituloParceiros h1{
+        font-size: 25px;
+    }
+    .slider{
+        height: 155px;
+    }
+    .slides > img{
+        height: 100%
+    };
+    .slides{
+        height: 155px;
+    }
+    .navigation-auto{
+        margin-top: 160px;
+    }
+    .navigation-auto div{
+        padding: 2px;
+    }
+    .navigation-auto div:not(:last-child) {
+        margin-right: 20px;
+    }
+    .textoCarrossel{
+        margin-left: 36%;
+        margin-top: 10%;
+    }
+    .textoCarrossel h1{
+        font-size: 20px;
+    }
+    .textoCarrossel p{
+        font-size: 10px;
+    }
+    .textoSecaoConteudo{
+        margin: 20px auto; 
+        width: 90%;
+    }
+    .textoSecaoConteudo>h2{
+        font-size: 18px;
+    }
+    .textoSecaoConteudo>p{
+        font-size: 12px;
+        padding: 1.5px;
+    }
+    footer{
+        min-height: 60px;
+        flex-direction: column;
+    }
+    .logoFooter{
+        width: 80%;
+        height: 70px;
+        order: 2;
+        margin: 5px auto;
+    }
+    .linksFooter{
+        width: 50%;
+        order: 1;
+        height: 50px;
+    }
+    .logoFooter > img{
+        width: 100%;
+        height: 60px;
+        margin-bottom: 5px;
+    }
+    .subtituloLinks{
+        margin-bottom: 5px;
+        margin-top: 6px;
+        font-size: 8px;
+    }
+    .imagenslinksFooter{
+        width: 80%;
+    }
+    .imagenslinksFooter>a>img {
+        height: 30px;
+        width: 30px;
+    }
+    .sonhos{
+        width: 90%;
+        margin: 30px auto;
+    }
+    .sonhos > img{
+        width: 90%;
+        margin: .5rem auto;
+    }
+    .sonhos > h2{
+        font-size: 1.15rem;
+    }
+    .sonhos > p{
+        font-size: 15px;
+        padding: .95rem;
+    }
+    .secaoFormulario{
+        width: 85%;
+        height: 360px;
+        padding: 2px;
+    }
+    .tituloFormulario{
+        font-size: 10px;
+    }
+    .inputsFormulario{
+        width: 90%;
+    }
+    .inputsFormulario input{
+        font-size: 12px;
+        height: 16px;
+        margin: .40rem 0;
+        padding: .40rem;
+    }
+    .input-mensagem{
+        height: 60px;
+        padding: .75rem;
+        font-size: 12px;
+    }
+    .botoesInputs input{
+        font-size: 1    2px;
+        height: 1.35rem;
     }
 }
