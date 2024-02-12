@@ -314,7 +314,7 @@ section.module.parallax-1 {
     min-height: 100px;
     font-family: var(--fontePadrao);
     color: white;
-    margin: 100px auto;
+    margin:  auto;
     z-index: 9;
 }
 
@@ -450,6 +450,7 @@ footer {
 
 .parteTitulo>h2 {
     font-size: 25px;
+    padding: 10px;
 }
 
 .linksSecaoIntroducao {
@@ -626,7 +627,18 @@ font-family: var(--fontePadrao);
     height: 500px;
     background-color: white;
 }
-
+#secaoEconomia{
+    display: flex;
+    justify-content: center;
+}
+#secaoVantagens{
+    display: flex;
+    justify-content: center;
+}
+#secaoRenovavel{
+    display: flex;
+    justify-content: center;
+}
 @media screen  and (max-width: 1025px){
     .logo{
         width: 40%;
@@ -695,7 +707,7 @@ font-family: var(--fontePadrao);
     }
     .slide > img{
         height: 100%
-    };
+    }
     .slides{
         height: 650px;
     }
@@ -714,7 +726,7 @@ font-family: var(--fontePadrao);
         margin-left: 18%;
     }
     .textoSecaoConteudo{
-        margin: 20% auto;
+        margin: auto;
         width: 70%; 
     }
     .textoSecaoConteudo>h2{
@@ -756,25 +768,26 @@ font-family: var(--fontePadrao);
         padding: 1.75rem;
     }
     .secaoFormulario{
-        height: 580px;
+        width: 70%;
+        height: 780px;
         padding: 7px;
     }
     .tituloFormulario{
-        font-size: 15px;
+        font-size: 25px;
     }
     .inputsFormulario input{
-        font-size: 15px;
-        height: 25px;
+        font-size: 28px;
+        height: 55px;
         margin: .75rem 0;
     }
     .input-mensagem{
-        height: 80px;
+        height: 100px;
         padding: .75rem;
-        font-size: 15px;
+        font-size: 28px;
     }
     .botoesInputs input{
-        font-size: 15px;
-        height: 1.75rem;
+        font-size: 28px;
+        height: 3rem;
     }
 }
 @media screen and (max-width: 769px){
@@ -782,7 +795,7 @@ font-family: var(--fontePadrao);
         width: 40%;
      }
     .logo > a > img{
-        height: 80px;
+        height: 100px;
         width: 100%;
     }
     .telLogo > img{
@@ -797,15 +810,15 @@ font-family: var(--fontePadrao);
         height: 35px;
     }
     .itensNav > a > h2{
-        font-size: 20px;
+        font-size: 22px;
         padding-top: 12px;
     }
     .itensNav > h2{
-        font-size: 20px;
+        font-size: 22px;
         margin-top: 10px;
     }
     .dropbtn{
-        font-size: 20px;
+        font-size: 22px;
     }
 
     section.module.parallax{
@@ -813,7 +826,7 @@ font-family: var(--fontePadrao);
     }
     .parteTitulo{
         margin-top: 60px;
-        margin-left: 90px;
+        margin-left: 70px;
     }
     .parteTitulo>h1{
         font-size: 30px;
@@ -821,14 +834,15 @@ font-family: var(--fontePadrao);
     }
     .parteTitulo>h2{
         font-size: 24px;
+        padding: 8px;
     }
     .linksSecaoIntroducao{
         margin-top: 120px;
         margin-right: 30px;
     }
     .linksSecaoIntroducao>a{
-        font-size: 22px;
-        padding: 2px;
+        font-size: 24px;
+        padding: 10px;
         text-align: center;
     }
     .tituloParceiros {
@@ -847,7 +861,7 @@ font-family: var(--fontePadrao);
         height: 500px;
     }
     .navigation-auto{
-        margin-top: 380px;
+        margin-top: 460px;
     }
     .textoCarrossel{
         width: 250px;
@@ -861,7 +875,7 @@ font-family: var(--fontePadrao);
         font-size: 24px;
     }
     .textoSecaoConteudo{
-        margin: 20% auto; 
+        margin: auto; 
         width: 70% ;
     }
     .textoSecaoConteudo>h2{
@@ -903,27 +917,27 @@ font-family: var(--fontePadrao);
         padding: 1.15rem;
     }
     .secaoFormulario{
-        width: 60%;
-        height: 520px;
+        width: 70%;
+        height: 700px;
         padding: 7px;
     }
     .tituloFormulario{
-        font-size: 12px;
+        font-size: 22px;
     }
     .inputsFormulario input{
-        font-size: 12px;
-        height: 20px;
+        font-size: 20px;
+        height: 45px;
         margin: .75rem 0;
         padding: .75rem;
     }
     .input-mensagem{
-        height: 70px;
+        height: 100px;
         padding: .75rem;
-        font-size: 12px;
+        font-size: 20px;
     }
     .botoesInputs input{
-        font-size: 12px;
-        height: 1.50rem;
+        font-size: 20px;
+        height: 2.5rem;
     }
 }
 @media screen and (max-width: 415px){
@@ -932,24 +946,24 @@ font-family: var(--fontePadrao);
         flex-direction: column;
     }
     .logo{
-        width: 90%;
+        width: 100%;
         flex-direction: row;
         margin: auto;
     }
     .logo > a > img{
-        height: 55px;
+        height: 80px;
         width: 100%;
     }
     .telLogo > img{
         width: 20px;
     }
     .telLogo{
-        font-size: 15px;
+        font-size: 18px;
         width: 50%;
     }
     nav{
         margin-top: 2px;
-        height: 55px;
+        height: 65px;
         background-color: #000;
         z-index: 18;
         width: 100%;
@@ -958,20 +972,20 @@ font-family: var(--fontePadrao);
         height: 15px;
     }
     .itensNav > a > h2{
-        font-size: 16px;
+        font-size: 18px;
         padding-top: 5px;
     }
     .itensNav > h2{
-        font-size: 16px;
+        font-size: 18px;
         margin-top: 5px;
     }
     .dropbtn{
-        font-size: 16px;
+        font-size: 18px;
         padding: 5px;
     }
 
     section.module.parallax{
-        height: 75vh !important;
+        height: 80vh !important;
     }
     .parteTitulo{
         width: 45%;
@@ -979,11 +993,11 @@ font-family: var(--fontePadrao);
         margin-left: 5%;
     }
     .parteTitulo>h1{
-        font-size: 18px;
+        font-size: 22px;
         padding: 6px;
     }
     .parteTitulo>h2{
-        font-size: 15px;
+        font-size: 18px;
     }
     .linksSecaoIntroducao{
         margin-top: 70px;
@@ -991,44 +1005,47 @@ font-family: var(--fontePadrao);
     }
     .linksSecaoIntroducao>a{
         text-align: center;
-        margin: 5px 0;
-        font-size: 12px;
-        padding: 2px;
+        font-size: 18px;
+        padding: 10px;
     }
     .tituloParceiros {
-        height: 40px;
+        height: 60px;
     }
     .tituloParceiros h1{
-        font-size: 30px;
+        font-size: 38px;
     }
     .slider{
-        height: 220px;
+        height: 350px;
     }
     .slides{
-        height: 220px;
+        height: 350px;
+    }
+    .slide > img{
+        height: 100%;
     }
     .navigation-auto{
-        margin-top: 180px;
+        margin-top: 310px;
     }
     .textoCarrossel{
-        margin-left: 25%;
-        margin-top: 10%;
+        margin-left: 30%;
+        margin-top: 16%;
     }
     .textoCarrossel h1{
-        font-size: 24px;
+        font-size: 32px;
     }
     .textoCarrossel p{
-        font-size: 12px;
+        font-size: 20px;
     }
     .textoSecaoConteudo{
-        margin: 20px auto; 
-        width: 70%;
+        margin: auto; 
+        width: 90%;
     }
     .textoSecaoConteudo>h2{
-        font-size: 18px;
+        font-size: 28px;
+        padding: 1.5px;
     }
     .textoSecaoConteudo>p{
-        font-size: 12px;
+        font-size: 20px;
         padding: 1.5px;
     }
     footer{
@@ -1067,27 +1084,92 @@ font-family: var(--fontePadrao);
         padding: 1.15rem;
     }
     .secaoFormulario{
-        width: 80%;
-        height: 450px;
+        width: 90%;
+        height: 600px;
         padding: 5px;
     }
     .tituloFormulario{
-        font-size: 10px;
+        font-size: 16px;
+        padding: 4px;
+    }
+    .inputsFormulario{
+        width: 80%;
     }
     .inputsFormulario input{
-        font-size: 12px;
-        height: 18px;
+        font-size: 16px;
+        height: 28px;
         margin: .50rem 0;
         padding: .50rem;
     }
     .input-mensagem{
-        height: 70px;
+        height: 90px;
         padding: .75rem;
-        font-size: 12px;
+        font-size: 16px;
+        margin: .50rem 0;
     }
     .botoesInputs input{
-        font-size: 12px;
-        height: 1.50rem;
+        font-size: 16px;
+        height: 2.5rem;
+    }
+}
+@media screen and (max-width: 391px){
+    .itensNav{
+        height: 15px;
+    }
+    .itensNav > a > h2{
+        font-size: 16px;
+        padding-top: 5px;
+    }
+    .itensNav > h2{
+        font-size: 16px;
+        margin-top: 5px;
+    }
+    .dropbtn{
+        font-size: 16px;
+        padding: 5px;
+    }
+    .textoCarrossel{
+        margin-left: 34%;
+        margin-top: 16%;
+    }
+    .textoCarrossel h1{
+        font-size: 30px;
+    }
+    .textoCarrossel p{
+        font-size: 20px;
+    }
+    .textoSecaoConteudo>h2{
+        font-size: 26px;
+        padding: 1.5px;
+    }
+    .textoSecaoConteudo>p{
+        font-size: 19px;
+        padding: 1.5px;
+    }
+}
+@media screen and (max-width: 376px) {
+    .tituloParceiros h1{
+        font-size: 35px;
+    }
+    .slider{
+        height: 330px;
+    }
+    .slides{
+        height: 330px;
+    }
+    .slide > img{
+        height: 100%;
+    }
+    .navigation-auto{
+        margin-top: 290px;
+    }
+    .textoSecaoConteudo>h2{
+        font-size: 24px;
+        padding: 1.5px;
+    }
+    .textoSecaoConteudo>p{
+        font-size: 17px;
+        padding: 1.5px;
     }
 }
 @media screen and (max-width: 321px){
@@ -1194,7 +1276,7 @@ font-family: var(--fontePadrao);
         font-size: 10px;
     }
     .textoSecaoConteudo{
-        margin: 1vh auto; 
+        margin: auto; 
         width: 90%;
     }
     .textoSecaoConteudo>h2{
@@ -1351,13 +1433,13 @@ font-family: var(--fontePadrao);
         font-size: 25px;
     }
     .slider{
-        height: 155px;
+        height: 200px;
     }
     .slides > img{
         height: 100%
-    };
+    }
     .slides{
-        height: 155px;
+        height: 200px;
     }
     .navigation-auto{
         margin-top: 160px;
@@ -1369,7 +1451,7 @@ font-family: var(--fontePadrao);
         margin-right: 20px;
     }
     .textoCarrossel{
-        margin-left: 36%;
+        margin-left: 44%;
         margin-top: 10%;
     }
     .textoCarrossel h1{
@@ -1379,16 +1461,16 @@ font-family: var(--fontePadrao);
         font-size: 10px;
     }
     .textoSecaoConteudo{
-        margin: 1vh auto; 
+        margin: auto; 
         width: 90%;
     }
     .textoSecaoConteudo>h2{
-        font-size: 20px;
-        padding: 5px;
+        font-size: 22px;
+        padding: 3px;
     }
     .textoSecaoConteudo>p{
-        font-size: 12px;
-        padding: 3px;
+        font-size: 14px;
+        padding: 2px;
     }
     footer{
         min-height: 60px;
@@ -1439,7 +1521,7 @@ font-family: var(--fontePadrao);
     }
     .secaoFormulario{
         width: 85%;
-        height: 360px;
+        height: 380px;
         padding: 2px;
     }
     .tituloFormulario{
@@ -1460,7 +1542,8 @@ font-family: var(--fontePadrao);
         font-size: 12px;
     }
     .botoesInputs input{
-        font-size: 1    2px;
+        font-size: 12px;
+        width: 70px;
         height: 1.35rem;
     }
 }
