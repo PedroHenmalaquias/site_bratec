@@ -16,16 +16,20 @@ const observer = new IntersectionObserver((entries) => {
         else entry.target.classList.remove("show");
     })
 });
+
+
 elements.forEach((element) => observer.observe(element));
-const popUp = document.querySelector("dialog");
-const openButton = document.querySelector("#Link-orçamento");
-const closeButton = popUp.querySelector("#botao-cancelar");
-openButton.onclick = function () {
-    popUp.showModal()
+const openModalButton = document.querySelector("#Link-orçamento");
+const closeModalButton = document.querySelector("#close-modal");
+const modal = document.querySelector("#modal5");
+const fade = document.querySelector("#fade5");
+const toggleModal = () => {
+  modal.classList.toggle("hide");
+  fade.classList.toggle("hide");
 };
-closeButton.onclick = function () {
-    popUp.close();
-};
+[openModalButton, closeModalButton, fade].forEach((el) => {
+  el.addEventListener("click", () => toggleModal());
+});
 function openWhatsapp() {
     const nome = document.getElementById("input-nome").value;
     const telefone = document.getElementById("input-numero").value;

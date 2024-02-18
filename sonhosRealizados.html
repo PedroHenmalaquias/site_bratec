@@ -2,126 +2,193 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="sonhosRealizados.css">
+  <!-- <script src="script.js" defer></script> -->
+  <script src="scriptSonhos.js" defer></script>
 </head>
 
 <body>
-    <header>
-        <div class="logo"><a href="index.html"><img src="images/Captura de tela 2024-01-11 154207.png" alt=""></a><div class="telLogo">
-        <img src="images/logoWhatsappCabecalho.png" alt=""><p>(61) 994180249</p></div></div>
-        <nav>
-            <div class="itensNav">
-                <div class="dropdown">
-                    <button class="dropbtn">Contato</button>
-                    <div class="dropdown-content">
-                        <a href="https://wa.me/5561994180249" target="_blank">Whatsapp <img
-                                src="images/logoWhatsappCabecalho.png" alt="" class="ImagensCabecalhoLinks"></a>
-                        <a href="https://www.instagram.com/bratec.energia?igsh=MWR2ajNsamdndnN4Nw=="
-                            target="_blank">Instagram <img src="images/logoInstagramCabecalho.png" alt=""
-                                class="ImagensCabecalhoLinks"></a>
-                        <a href="mailto:bratecenergia@gmail.com" target="_blank">Email <img
-                                src="images/logoGmailCabecalho.png" alt="" class="ImagensCabecalhoLinks"></a>
-                    </div>
-                </div>
-            </div>
-            <button class="itensNav" id="Link-orçamento">
-                <h2>Monte seu Orçamento</h2>
-            </button>
-            <div class="itensNav">
-                <a href="sonhosRealizados.html">
-                <h2>Sonhos realizados</h2></a>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <dialog class="secaoFormulario">
-            <form action="" method="get" onsubmit="openWhatsapp()">
-    
-                <div class="tituloFormulario">
-                    <h2>MONTE SEU ORÇAMENTO SEM COMPROMISSO</h2>
-                </div>
-                <div class="inputsFormulario"><label for="input-nome"></label>
-                    <input type="text" name="input-nome" id="input-nome" placeholder="*Nome:">
-                
-               <label for="input-numero"></label>
-                    <input type="tel" name="input-numero" id="input-numero" placeholder="*Telefone:">
-                
-               <label for="input-email"></label>
-                    <input type="email" name="email" id="input-email" placeholder="*Seu e-mail:">
-                
-               <label for="input-cidade"></label>
-                    <input type="text" name="input-cidade" id="input-cidade" placeholder="*Cidade e estado:">
-                
-               <label for="input-valorConta"></label>
-                    <input type="number" name="input-valorConta" id="input-valorConta" placeholder="*Valor da última conta (R$):">
-                    <label for="input-mensagem"></label>
-                    <textarea name="input-mensagem" class="input-mensagem" id="" cols="25" rows="10" placeholder="*Mensagem"></textarea>
-                </div>
-                <div class="botoesInputs">
-                    <input type="button" value="Cancelar" id="botao-cancelar">
-                    <input type="submit" value="Enviar" id="botao-envia">
-                </div>
-            </form>
-        </dialog>
-        <section class="secao-sonhos">
-            <div class="sonhos">
-                <dialog class="popUp" id="sonho-1"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro assumenda eum, officiis non earum possimus vero similique, illum voluptas sunt nobis esse! Quas, repudiandae excepturi temporibus distinctio error quae dolor?</p>
-                </dialog>
-                <img src="images/imagemSonho1.jpeg" alt="">
-                <h2>Gerador solar fotovoltaico
-                </h2>
-                <h2>10KWp / 18 módulos</h2>
-                <span></span>
-                <p>Instalado na SHIS QL 04 - Lago Sul - Brasília DF.</p>
-                <!-- <button id="opensonho1">Saiba mais. -->
-                <!-- </button> -->
-            </div>
-            <div class="sonhos"><dialog class="popUp" id="sonho-2">
-                </dialog><img src="images/imagemSonho2.jpeg" alt="">
-                <h2>Gerador solar fotovoltaico</h2>
-                <h2>85,8KWp / 156 módulos</h2>
-                <span></span>
-                <p>Instalado no SIA - Setor de Indústrias e Abastecimento - Brasília DF </p>
-                <!-- <button id="opensonho2">Saiba mais. -->
-                <!-- </button> -->
-            </div>
-            <div class="sonhos"><dialog class="popUp" id="sonho-3">
-                </dialog> <img src="images/imagemSonho3.jpeg" alt="">
-                <h2>Gerador solar fotovoltaico</h2>
-                <h2>24KWp / 36 módulos</h2>
-                <span></span>
-                <p>Instalado na SMPW Quadra 05 - Park Way - Brasilia DF</p>
-                 <!-- <button id="opensonho3">Saiba mais. -->
-                <!-- </button> -->
-            </div>
-            <div class="sonhos"><dialog class="popUp" id="sonho-4">
-                </dialog> <img src="images/imagemSonho4.jpeg" alt="">
-                <h2>Gerador solar fotovoltaico</h2>
-                <h2>12,1KWp / 22 módulos</h2>
-                <span></span>
-                <p>Instalado na SHIS QI 17 - Lago Sul - Brasília DF</p>
-                 <!-- <button id="opensonho4">Saiba mais. -->
-                <!--   </button> -->
-            </div>
-        </section>
-    </main>
-    <footer>
-        <div class="logoFooter"><img src="images/Captura de tela 2024-01-11 154207.png" alt=""></div>
-        <div class="linksFooter">
-            <div class="subtituloLinks">
-                <h2>NOSSOS CONTATOS</h2>
-            </div>
-            <div class="imagenslinksFooter"><a href="https://wa.me/5561994180249" target="_blank"><img
-                        src="images/imagemLinkwhatsapp.png" alt=""></a><a href="mailto:bratecenergia@gmail.com"
-                    target="_blank"><img src="images/imagemLinkEmail.png" alt=""></a><a
-                    href="https://www.instagram.com/bratec.energia?igsh=MWR2ajNsamdndnN4Nw==" target="_blank"><img
-                        src="images/imagemLinkInstagram.png" alt=""></a></div>
+  <header>
+    <div class="logo"><a href="index.html"><img src="images/logoBratec.png" alt=""></a>
+      <div class="telLogo">
+        <img src="images/logoWhatsappCabecalho.png" alt="">
+        <p>(61) 994180249</p>
+      </div>
+    </div>
+    <nav>
+      <div class="itensNav">
+        <div class="dropdown">
+          <button class="dropbtn">Contato</button>
+          <div class="dropdown-content">
+            <a href="https://wa.me/5561994180249" target="_blank">Whatsapp <img src="images/logoWhatsappCabecalho.png"
+                alt="" class="ImagensCabecalhoLinks"></a>
+            <a href="https://www.instagram.com/bratec.energia?igsh=MWR2ajNsamdndnN4Nw==" target="_blank">Instagram <img
+                src="images/logoInstagramCabecalho.png" alt="" class="ImagensCabecalhoLinks"></a>
+            <a href="mailto:bratecenergia@gmail.com" target="_blank">Email <img src="images/logoGmailCabecalho.png"
+                alt="" class="ImagensCabecalhoLinks"></a>
+          </div>
         </div>
-    </footer>
+      </div>
+      <button class="itensNav" id="Link-orçamento">
+        <h2>Monte seu Orçamento</h2>
+      </button>
+      <div class="itensNav">
+        <a href="sonhosRealizados.html">
+          <h2>Sonhos realizados</h2>
+        </a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div id="fade5" class="hide fade"></div>
+    <div id="modal5" class="hide modal">
+      <div class="modal-header">
+        <h2>MONTE SEU ORÇAMENTO SEM COMPROMISSO</h2>
+        <button id="close-modal5">X</button>
+      </div>
+      <div class="modal-body">
+        <form action="" method="get" onsubmit="openWhatsapp()">
+            <div class="inputsFormulario"><label for="input-nome"></label>
+                <input type="text" name="input-nome" id="input-nome" placeholder="*Nome:">
+            
+           <label for="input-numero"></label>
+                <input type="tel" name="input-numero" id="input-numero" placeholder="*Telefone:">
+            
+           <label for="input-email"></label>
+                <input type="email" name="email" id="input-email" placeholder="*Seu e-mail:">
+            
+           <label for="input-cidade"></label>
+                <input type="text" name="input-cidade" id="input-cidade" placeholder="*Cidade e estado:">
+            
+           <label for="input-valorConta"></label>
+                <input type="number" name="input-valorConta" id="input-valorConta" placeholder="*Valor da última conta (R$):">
+                <label for="input-mensagem"></label>
+                <textarea name="input-mensagem" class="input-mensagem" id="" cols="25" rows="10" placeholder="*Mensagem"></textarea>
+            </div>
+            <div class="botoesInputs"> 
+                <input type="submit" value="Enviar" id="botao-envia">
+            </div>
+        </form>
+      </div>
+    </div>
+    <section class="secao-sonhos">
+      <div class="sonhos">
+        <dialog class="popUp" id="sonho-1">
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro assumenda eum, officiis non earum possimus
+            vero similique, illum voluptas sunt nobis esse! Quas, repudiandae excepturi temporibus distinctio error quae
+            dolor?</p>
+        </dialog>
+        <img src="images/imagemSonho1.jpeg" alt="">
+        <h2>Gerador solar fotovoltaico
+        </h2>
+        <h2>10KWp / 18 módulos</h2>
+        <span></span>
+        <p>Instalado na SHIS QL 04 - Lago Sul - Brasília DF.</p>
+        <button id="open-modal">Abrir</button>
+        <div id="fade" class="hide fade"></div>
+        <div id="modal" class="hide modal">
+          <div class="modal-header">
+            <h2>SHIS QL 04 - Lago Sul - Brasília DF.</h2>
+            <button id="close-modal">Fechar</button>
+          </div>
+          <div class="modal-body">
+            <span></span>
+            <img src="images/sonho1/1.jpeg" alt="" class="imgModal"> <span></span><img src="images/sonho1/2.jpeg" alt=""
+              class="imgModal"><span></span><img src="images/sonho1/3.jpeg" alt="" class="imgModal"><span></span><img
+              src="images/sonho1/4.jpeg" alt="" class="imgModal"><span></span><img src="images/sonho1/5.jpeg" alt=""
+              class="imgModal"><span></span><img src="images/sonho1/6.jpeg" alt="" class="imgModal"><span></span><img
+              src="images/sonho1/7.jpeg" alt="" class="imgModal"><span></span><img src="images/sonho1/8.jpeg" alt=""
+              class="imgModal"><span></span><img src="images/sonho1/9.jpeg" alt="" class="imgModal"><span></span>
+          </div>
+        </div>
+      </div>
+      <div class="sonhos">
+        <dialog class="popUp" id="sonho-2">
+        </dialog><img src="images/imagemSonho2.jpeg" alt="">
+        <h2>Gerador solar fotovoltaico</h2>
+        <h2>85,8KWp / 156 módulos</h2>
+        <span></span>
+        <p>Instalado no SIA - Setor de Indústrias e Abastecimento - Brasília DF </p>
+        <button id="open-modal2">Abrir</button>
+        <div id="fade2" class="hide fade"></div>
+        <div id="modal2" class="hide modal">
+          <div class="modal-header">
+            <h2>SIA - Setor de Indústrias e Abastecimento - Brasília DF</h2>
+            <button id="close-modal2">Fechar</button>
+          </div>
+          <div class="modal-body">
+            <img src="images/sonho2/1.jpeg" alt="" class="imgModal"><span></span><img src="images/sonho2/2.jpeg" alt="" class="imgModal"><span></span><img src="images/sonho2/3.jpeg" alt="" class="imgModal"><span></span><img src="images/sonho2/4.jpeg"
+              alt="" class="imgModal"><span></span><img src="images/sonho2/5.jpeg" alt="" class="imgModal"><span></span><img src="images/sonho2/6.jpeg" alt=""
+              class="imgModal"><span></span><img src="images/sonho2/7.jpeg" alt="" class="imgModal"><span></span><img src="images/sonho2/8.jpeg" alt=""
+              class="imgModal"><span></span><img src="images/sonho2/9.jpeg" alt="" class="imgModal"><span></span><img src="images/sonho2/10.jpeg" alt=""
+              class="imgModal"><span></span><img src="images/sonho2/11.jpeg" alt="" class="imgModal"><span></span><img src="images/sonho2/12.jpeg" alt=""
+              class="imgModal"><span></span><img src="images/sonho2/13.jpeg" alt="" class="imgModal"><span></span><img src="images/sonho2/14.jpeg" alt=""
+              class="imgModal"><span></span><img src="images/sonho2/15.jpeg" alt="" class="imgModal"><span></span><img src="images/sonho2/16.jpeg" alt=""
+              class="imgModal"><span></span><img src="images/sonho2/17.jpeg" alt="" class="imgModal"><span></span><img src="images/sonho2/18.jpeg" alt=""
+              class="imgModal"><span></span><img src="images/sonho2/19.jpeg" alt="" class="imgModal"><span></span><img src="images/sonho2/20.jpeg" alt=""
+              class="imgModal"><span></span><img src="images/sonho2/21.jpeg" alt="" class="imgModal"><span></span><img src="images/sonho2/22.jpeg" alt=""
+              class="imgModal"><span></span><img src="images/sonho2/23.jpeg" alt="" class="imgModal"><span></span><img src="images/sonho2/24.jpeg" alt=""
+              class="imgModal"><span></span><img src="images/sonho2/25.jpeg" alt="" class="imgModal"><span></span>
+          </div>
+        </div>
+      </div>
+      <div class="sonhos">
+        <dialog class="popUp" id="sonho-3">
+        </dialog> <img src="images/imagemSonho3.jpeg" alt="">
+        <h2>Gerador solar fotovoltaico</h2>
+        <h2>24KWp / 36 módulos</h2>
+        <span></span>
+        <p>Instalado na SMPW Quadra 05 - Park Way - Brasilia DF</p>
+        <button id="open-modal3">Abrir</button>
+        <div id="fade3" class="hide fade"></div>
+        <div id="modal3" class="hide modal">
+          <div class="modal-header">
+            <h2>SMPW Quadra 05 - Park Way - Brasilia DF</h2>
+            <button id="close-modal3">Fechar</button>
+          </div>
+          <div class="modal-body">
+           <img src="images/sonho3/1.jpeg" alt="" class="imgModal"><span></span><img src="images/sonho3/2.jpeg" alt="" class="imgModal"><span></span><img src="images/sonho3/3.jpeg" alt="" class="imgModal"><span></span><img src="images/sonho3/4.jpeg" alt="" class="imgModal"><span></span><img src="images/sonho3/5.jpeg" alt="" class="imgModal"><span></span><img src="images/sonho3/6.jpeg" alt="" class="imgModal"><span></span><img src="images/sonho3/7.jpeg" alt="" class="imgModal"><span></span><img src="images/sonho3/8.jpeg" alt="" class="imgModal"><span></span><img src="images/sonho3/9.jpeg" alt="" class="imgModal"><span></span><img src="images/sonho3/10.jpeg" alt="" class="imgModal"><span></span><img src="images/sonho3/11.jpeg" alt="" class="imgModal"><span></span><img src="images/sonho3/12.jpeg" alt="" class="imgModal"><span></span>
+          </div>
+        </div>
+      </div>
+      <div class="sonhos">
+        <dialog class="popUp" id="sonho-4">
+        </dialog> <img src="images/imagemSonho4.jpeg" alt="">
+        <h2>Gerador solar fotovoltaico</h2>
+        <h2>12,1KWp / 22 módulos</h2>
+        <span></span>
+        <p>Instalado na SHIS QI 17 - Lago Sul - Brasília DF</p>
+        <button id="open-modal4">Abrir</button>
+        <div id="fade4" class="hide fade"></div>
+        <div id="modal4" class="hide modal">
+          <div class="modal-header">
+            <h2>SHIS QI 17 - Lago Sul - Brasília DF</h2>
+            <button id="close-modal4">Fechar</button>
+          </div>
+          <div class="modal-body">
+           <img src="images/sonho4/1.jpeg" alt="" class="imgModal"><span></span><img src="images/sonho4/2.jpeg" alt="" class="imgModal"><span></span><img src="images/sonho4/3.jpeg" alt="" class="imgModal"><span></span><img src="images/sonho4/4.jpeg" alt="" class="imgModal"><span></span><img src="images/sonho4/5.jpeg" alt="" class="imgModal"><span></span><img src="images/sonho4/6.jpeg" alt="" class="imgModal"><span></span><img src="images/sonho4/7.jpeg" alt="" class="imgModal"><span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="logoFooter"><img src="images/logoBratec.png" alt=""></div>
+    <div class="linksFooter">
+      <div class="subtituloLinks">
+        <h2>NOSSOS CONTATOS</h2>
+      </div>
+      <div class="imagenslinksFooter"><a href="https://wa.me/5561994180249" target="_blank"><img
+            src="images/imagemLinkwhatsapp.png" alt=""></a><a href="mailto:bratecenergia@gmail.com" target="_blank"><img
+            src="images/imagemLinkEmail.png" alt=""></a><a
+          href="https://www.instagram.com/bratec.energia?igsh=MWR2ajNsamdndnN4Nw==" target="_blank"><img
+            src="images/imagemLinkInstagram.png" alt=""></a></div>
+    </div>
+  </footer>
 </body>
 
 </html>

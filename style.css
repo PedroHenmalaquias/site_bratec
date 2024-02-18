@@ -19,7 +19,7 @@ body {
 header {
     width: 100%;
     display: flex;
-    background-color: #000000;
+    background-color: #002751;
     /*margin-bottom: 20px;*/
     position: sticky;
     top: 0;
@@ -35,7 +35,7 @@ header {
 
 .logo > a > img {
     width: 100%;
-    height: 115px;
+    height: 90px;
 }
 .telLogo{
 display: flex;
@@ -49,6 +49,7 @@ font-family: var(--fontePadrao);
 }
 nav {
     width: 70%;
+    background-color: #002751;
     margin-top: 50px;
     height: 60px;
     display: flex;
@@ -57,6 +58,7 @@ nav {
 
 .itensNav {
     height: 60px;
+    background-color: #002751;
     color: white;
     width: 23%;
     text-align: center;
@@ -119,7 +121,7 @@ section.module.parallax-1 {
 
 .tituloParceiros {
     width: 100%;
-    background-color: #000;
+    background-color: #002751;
     color: white;
     height: 100px;
     text-align: center;
@@ -161,7 +163,7 @@ section.module.parallax-1 {
 
 /* Dropdown Button */
 .dropbtn {
-    background-color: #000;
+    background-color: #002751;
     color: white;
     padding: 16px;
     font-size: 20px;
@@ -215,11 +217,15 @@ section.module.parallax-1 {
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .dropdown-content:hover .dropdown-content {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
@@ -354,7 +360,7 @@ footer {
     min-height: 120px;
     display: flex;
     flex-wrap: wrap;
-    background-color: black;
+    background-color: #002751;
     font-family: var(--fontePadrao);
 }
 
@@ -446,11 +452,12 @@ footer {
 .parteTitulo>h1 {
     font-size: 35px;
     padding: 10px;
+    padding-left: 4px;
 }
 
 .parteTitulo>h2 {
     font-size: 25px;
-    padding: 10px;
+    padding: 4px;
 }
 
 .linksSecaoIntroducao {
@@ -471,45 +478,100 @@ footer {
     cursor: pointer;
 }
 
-.secaoFormulario {
+#open-modal {
+    background-color: #007bff;
+  }
+  
+  button:hover {
+    opacity: 1;
+  }    
+  #fade5{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: ;
+  }
+  #modal5{position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     width: 50%;
     height: 650px;
-    /* display: flex; */
+    display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background-color: #000;
-    border-radius: 10px;
-    color: white;
-    margin: auto;
-    padding: 10px;
-    font-family: var(--fontePadrao);
-    border: none;
     overflow: auto;
-}
-
-.tituloFormulario {
-    width: 100%;
+    max-width: 90%;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 0.5rem;
+    z-index: 25;
+    background-color: #002751;
+    border: none;
+    font-family: var(--fontePadrao);
+  }  
+  #fade5,
+  #modal5 {
+    transition: 0.5s;
+    opacity: 1;
+    pointer-events: all;
+  }
+  
+  #modal5 > .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 1rem;
+    padding-bottom: 10px;
+  }
+  
+  #modal5 > .modal-body p {
+    margin-bottom: 1rem;
+  }
+  
+  #modal5.hide,
+  #fade5.hide {
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  #modal5.hide {
+    top: 0;
+  }
+  #modal5 > .modal-header > button{
+    width: 12%;
+    height: 30px;
+    font-size: 20px;
+    border: none;
+    background-color: #002751;
+    color: white;
+  }
+  #modal5 > .modal-header > h2{
+    width: 88%;
     text-align: center;
     font-weight: bold;
     font-size: 20px;
-}
-
-.inputsFormulario {
+  }
+  .inputsFormulario{
     width: 70%;
     display: flex;
     flex-direction: column;
     margin: auto;
     font-size: 25px;
     padding: 1rem;
-}
-.inputsFormulario input{
+  }
+  .inputsFormulario input{
     margin: 1rem 0;
-    font-size: 20px;
     border: none;
+    font-size: 20px;
     border-radius: .25rem;
     height: 35px;
-}
-.input-mensagem{
+  }
+  .input-mensagem{
     height: 100px;
     vertical-align: text-top;
     text-wrap: wrap;
@@ -517,12 +579,6 @@ footer {
     font-size: 20px;
     border-radius: .25rem;
 }
-
-dialog::backdrop {
-    background-color: rgba(0, 0, 0, .6);
-    filter: blur(20px);
-}
-
 .botoesInputs {
     width: 100%;
     display: flex;
@@ -549,7 +605,7 @@ dialog::backdrop {
 }
 
 #Link-orçamento {
-    background-color: #000;
+    background-color: #002751;
     border: none;
 }
 /* SEÇÃO SONHOS REALIZADOS*/
@@ -568,7 +624,7 @@ margin-bottom: 1rem;
 padding-bottom: 1rem;
 margin-top: 3rem;
 padding-top: 1rem;
-border: 1px solid black;
+border: none;
 border-radius: .25rem;
 background-color: white;
 color: black;
@@ -593,18 +649,6 @@ font-family: var(--fontePadrao);
 .sonhos > p{
     padding: 2rem;
     font-size: 20px;
-}
-.sonhos > button{
-    background-color: #007bff;
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-size: 20px;
-    width: 20%;
-    border-radius: .25rem;
-    margin-left: 70%;
-    height: 40px;
-    opacity: .8;
 }
 .sonhos > button:hover{
     transition: .5s;
@@ -671,7 +715,17 @@ font-family: var(--fontePadrao);
     .dropbtn{
         font-size: 27px;
     }
-
+    .dropdown-content{
+        width: 240px;
+        height: 280px;
+    }
+    .dropdown-content a{
+        font-size: 26px;
+    }
+    .ImagensCabecalhoLinks{
+        width: 50px;
+        height: 50px;
+    }
     section.module.parallax{
         height: 90vh !important;
     }
@@ -767,12 +821,12 @@ font-family: var(--fontePadrao);
         font-size: 28px;
         padding: 1.75rem;
     }
-    .secaoFormulario{
+    #modal5{
         width: 70%;
         height: 780px;
         padding: 7px;
     }
-    .tituloFormulario{
+    #modal5 > .modal-header > h2{
         font-size: 25px;
     }
     .inputsFormulario input{
@@ -916,12 +970,12 @@ font-family: var(--fontePadrao);
         font-size: 24px;
         padding: 1.15rem;
     }
-    .secaoFormulario{
+    #modal5{
         width: 70%;
         height: 700px;
         padding: 7px;
     }
-    .tituloFormulario{
+    #modal5 > .modal-header > h2{
         font-size: 22px;
     }
     .inputsFormulario input{
@@ -940,9 +994,8 @@ font-family: var(--fontePadrao);
         height: 2.5rem;
     }
 }
-@media screen and (max-width: 415px){
+@media screen and (max-width: 431px) {
     header{
-        display: flex;
         flex-direction: column;
     }
     .logo{
@@ -960,158 +1013,170 @@ font-family: var(--fontePadrao);
     .telLogo{
         font-size: 18px;
         width: 50%;
-    }
-    nav{
-        margin-top: 2px;
-        height: 65px;
-        background-color: #000;
-        z-index: 18;
-        width: 100%;
-    }
-    .itensNav{
-        height: 15px;
-    }
-    .itensNav > a > h2{
-        font-size: 18px;
-        padding-top: 5px;
-    }
-    .itensNav > h2{
-        font-size: 18px;
-        margin-top: 5px;
-    }
-    .dropbtn{
-        font-size: 18px;
-        padding: 5px;
-    }
-
-    section.module.parallax{
-        height: 80vh !important;
-    }
-    .parteTitulo{
-        width: 45%;
-        margin-top: 30px;
-        margin-left: 5%;
-    }
-    .parteTitulo>h1{
-        font-size: 22px;
-        padding: 6px;
-    }
-    .parteTitulo>h2{
-        font-size: 18px;
-    }
-    .linksSecaoIntroducao{
-        margin-top: 70px;
-        margin-right: 20px;
-    }
-    .linksSecaoIntroducao>a{
-        text-align: center;
-        font-size: 18px;
-        padding: 10px;
-    }
-    .tituloParceiros {
-        height: 60px;
-    }
-    .tituloParceiros h1{
-        font-size: 38px;
-    }
-    .slider{
-        height: 350px;
-    }
-    .slides{
-        height: 350px;
-    }
-    .slide > img{
-        height: 100%;
-    }
-    .navigation-auto{
-        margin-top: 310px;
-    }
-    .textoCarrossel{
-        margin-left: 30%;
-        margin-top: 16%;
-    }
-    .textoCarrossel h1{
-        font-size: 32px;
-    }
-    .textoCarrossel p{
-        font-size: 20px;
-    }
-    .textoSecaoConteudo{
-        margin: auto; 
-        width: 90%;
-    }
-    .textoSecaoConteudo>h2{
-        font-size: 28px;
-        padding: 1.5px;
-    }
-    .textoSecaoConteudo>p{
-        font-size: 20px;
-        padding: 1.5px;
-    }
-    footer{
-        min-height: 70px;
-    }
-    .logoFooter{
-        width: 60%;
-        height: 80px;
-        justify-content: center;
-    }
-    .logoFooter > img{
-        width: 100%;
-        height: 80px;
-    }
-    .subtituloLinks{
-        margin-bottom: 4px;
-        margin-top: 8px;
-        font-size: 12px;
-    }
-    .imagenslinksFooter>a>img {
-        height: 35px;
-        width: 35px;
-    }
-    .sonhos{
-        width: 90%;
-        margin: 30px auto;
-    }
-    .sonhos > img{
-        width: 80%;
-    }
-    .sonhos > h2{
-        font-size: 1.75rem;
-    }
-    .sonhos > p{
-        font-size: 20px;
-        padding: 1.15rem;
-    }
-    .secaoFormulario{
-        width: 90%;
-        height: 600px;
-        padding: 5px;
-    }
-    .tituloFormulario{
-        font-size: 16px;
-        padding: 4px;
-    }
-    .inputsFormulario{
-        width: 80%;
-    }
-    .inputsFormulario input{
-        font-size: 16px;
-        height: 28px;
-        margin: .50rem 0;
-        padding: .50rem;
-    }
-    .input-mensagem{
-        height: 90px;
-        padding: .75rem;
-        font-size: 16px;
-        margin: .50rem 0;
-    }
-    .botoesInputs input{
-        font-size: 16px;
-        height: 2.5rem;
-    }
+  }
+  nav{
+    margin-top: 2px;
+    height: 65px;
+    background-color: #002751;
+    z-index: 18;
+    width: 100%;
 }
+.itensNav{
+    height: 15px;
+}
+.itensNav > a > h2{
+    font-size: 18px;
+    padding-top: 5px;
+}
+.itensNav > h2{
+    font-size: 18px;
+    margin-top: 5px;
+}
+.dropbtn{
+    font-size: 18px;
+    padding: 5px;
+}
+.dropdown-content{
+    width: 200px;
+    height: 220px;
+}
+.dropdown-content a{
+    font-size: 22px;
+}
+.ImagensCabecalhoLinks{
+    width: 40px;
+    height: 40px;
+}
+section.module.parallax{
+    height: 80vh !important;
+}
+.parteTitulo{
+    width: 45%;
+    margin-top: 30px;
+    margin-left: 5%;
+}
+.parteTitulo>h1{
+    font-size: 22px;
+    padding: 6px;
+}
+.parteTitulo>h2{
+    font-size: 18px;
+}
+.linksSecaoIntroducao{
+    margin-top: 70px;
+    margin-right: 20px;
+}
+.linksSecaoIntroducao>a{
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+}
+.tituloParceiros {
+    height: 60px;
+}
+.tituloParceiros h1{
+    font-size: 38px;
+}
+.slider{
+    height: 350px;
+}
+.slides{
+    height: 350px;
+}
+.slide > img{
+    height: 100%;
+}
+.navigation-auto{
+    margin-top: 310px;
+}
+.textoCarrossel{
+    margin-left: 30%;
+    margin-top: 16%;
+}
+.textoCarrossel h1{
+    font-size: 32px;
+}
+.textoCarrossel p{
+    font-size: 20px;
+}
+.textoSecaoConteudo{
+    margin: auto; 
+    width: 90%;
+}
+.textoSecaoConteudo>h2{
+    font-size: 28px;
+    padding: 1.5px;
+}
+.textoSecaoConteudo>p{
+    font-size: 20px;
+    padding: 1.5px;
+}
+footer{
+    min-height: 70px;
+}
+.logoFooter{
+    width: 60%;
+    height: 80px;
+    justify-content: center;
+}
+.logoFooter > img{
+    width: 100%;
+    height: 80px;
+}
+.subtituloLinks{
+    margin-bottom: 4px;
+    margin-top: 8px;
+    font-size: 12px;
+}
+.imagenslinksFooter>a>img {
+    height: 35px;
+    width: 35px;
+}
+.sonhos{
+    width: 90%;
+    margin: 30px auto;
+}
+.sonhos > img{
+    width: 80%;
+}
+.sonhos > h2{
+    font-size: 1.75rem;
+}
+.sonhos > p{
+    font-size: 22px;
+    padding: 1.15rem;
+}
+#modal5{
+    width: 90%;
+    height: 600px;
+    padding: 5px;
+}
+#modal5 > .modal-header > h2{
+    font-size: 16px;
+    padding: 4px;
+}
+.inputsFormulario{
+    width: 80%;
+}
+.inputsFormulario input{
+    font-size: 16px;
+    height: 28px;
+    margin: .50rem 0;
+    padding: .50rem;
+}
+.input-mensagem{
+    height: 90px;
+    padding: .75rem;
+    font-size: 16px;
+    margin: .50rem 0;
+}
+.botoesInputs input{
+    font-size: 16px;
+    height: 2.5rem;
+}
+}
+
+
 @media screen and (max-width: 391px){
     .itensNav{
         height: 15px;
@@ -1150,6 +1215,14 @@ font-family: var(--fontePadrao);
 @media screen and (max-width: 376px) {
     .tituloParceiros h1{
         font-size: 35px;
+    }
+    .parteTitulo > h1{
+        font-size: 20px;
+        padding: 4px;
+    }
+    .parteTitulo > h2{
+        font-size: 16px;
+        padding: 4px;
     }
     .slider{
         height: 330px;
@@ -1196,7 +1269,7 @@ font-family: var(--fontePadrao);
     nav{
         margin-top: 2px;
         height: 65px;
-        background-color: #000;
+        background-color: #002751;
         z-index: 18;
         width: 100%;
     }
@@ -1333,12 +1406,12 @@ font-family: var(--fontePadrao);
         font-size: 15px;
         padding: .95rem;
     }
-    .secaoFormulario{
+    #modal5{
         width: 85%;
         height: 400px;
         padding: 2px;
     }
-    .tituloFormulario{
+    #modal5 > .modal-header > h2{
         font-size: 10px;
     }
     .inputsFormulario input{
@@ -1381,7 +1454,7 @@ font-family: var(--fontePadrao);
     nav{
         margin-top: 2px;
         height: 45px;
-        background-color: #000;
+        background-color: #002751;
         z-index: 18;
         width: 100%;
     }
@@ -1400,7 +1473,17 @@ font-family: var(--fontePadrao);
         font-size: 12px;
         padding: 5px;
     }
-
+    .dropdown-content{
+        width: 180px;
+        height: 200px;
+    }
+    .dropdown-content a{
+        font-size: 20px;
+    }
+    .ImagensCabecalhoLinks{
+        width: 35px;
+        height: 35px;
+    }
     section.module.parallax{
         height: 70vh !important;
     }
@@ -1410,11 +1493,12 @@ font-family: var(--fontePadrao);
         margin-left: 5%;
     }
     .parteTitulo>h1{
-        font-size: 18px;
-        padding: 4px;
+        font-size: 16px;
+        padding: 1px;
     }
     .parteTitulo>h2{
-        font-size: 15px;
+        font-size: 13px;
+        padding: 2px;
     }
     .linksSecaoIntroducao{
         margin-top: 50px;
@@ -1519,12 +1603,12 @@ font-family: var(--fontePadrao);
         font-size: 15px;
         padding: .95rem;
     }
-    .secaoFormulario{
+    #modal5{
         width: 85%;
         height: 380px;
         padding: 2px;
     }
-    .tituloFormulario{
+    #modal5 > .modal-header > h2{
         font-size: 10px;
     }
     .inputsFormulario{
