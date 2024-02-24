@@ -24,11 +24,11 @@ const closeModalButton = document.querySelector("#close-modal");
 const modal = document.querySelector("#modal5");
 const fade = document.querySelector("#fade5");
 const toggleModal = () => {
-  modal.classList.toggle("hide");
-  fade.classList.toggle("hide");
+    modal.classList.toggle("hide");
+    fade.classList.toggle("hide");
 };
 [openModalButton, closeModalButton, fade].forEach((el) => {
-  el.addEventListener("click", () => toggleModal());
+    el.addEventListener("click", () => toggleModal());
 });
 function openWhatsapp() {
     const nome = document.getElementById("input-nome").value;
@@ -45,6 +45,6 @@ function openWhatsapp() {
         + "*E-mail*: " + email + "%0a"
         + "*Cidade / Estado*: " + cidadeEstado + "%0a%0"
         + "*Valor da conta*: R$ " + valorConta; "%0a%0"
-        + "Mensagem: " +Mensagem;
+            + "Mensagem: " + Mensagem;
     window.open(url, '_blank').focus();
 };
