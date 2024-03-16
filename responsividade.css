@@ -364,6 +364,9 @@
         width: 100%;
         height: 85px;
     }
+    .linksFooter{
+        font-size: 17px;
+    }
 
     .subtituloLinks {
         margin-bottom: 5px;
@@ -575,12 +578,18 @@
 
     footer {
         min-height: 70px;
+        flex-direction: column;
+        align-items: center;
     }
 
     .logoFooter {
         width: 60%;
         height: 80px;
         justify-content: center;
+        margin: 10px;
+    }
+    .linksFooter{
+        width: 60%;
     }
 
     .logoFooter>img {
@@ -865,10 +874,8 @@
     }
 
     .slides>img {
-        height: 100%
+        height: 100%;
     }
-
-    ;
 
     .slides {
         height: 180px;
@@ -921,14 +928,14 @@
     .logoFooter {
         width: 80%;
         height: 70px;
-        order: 2;
         margin: 5px auto;
     }
 
     .linksFooter {
-        width: 50%;
-        order: 1;
+        width: 80%;
+        font-size: 14px;
         height: 50px;
+        margin: 10px;
     }
 
     .logoFooter>img {
@@ -1166,13 +1173,11 @@
     .logoFooter {
         width: 80%;
         height: 70px;
-        order: 2;
         margin: 5px auto;
     }
 
     .linksFooter {
         width: 50%;
-        order: 1;
         height: 50px;
     }
 
